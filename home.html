@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GoTravel - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">GoTravel</span>
+      <div>
+        <span id="welcomeSpan" class="me-3"></span>
+        <button id="logoutBtn" class="btn btn-outline-secondary btn-sm">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-3">Explore Destinations</h2>
+
+    <!-- Carousel -->
+    <div id="destCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#destCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#destCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#destCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Paris -->
+        <div class="carousel-item active">
+          <img src="C:\21\images\paris.jpg"
+               class="d-block w-100 carousel-img" alt="Paris">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Paris</h5>
+            <p>Romantic city of lights and art.</p>
+          </div>
+        </div>
+
+        <!-- Tokyo -->
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1400&q=80"
+               class="d-block w-100 carousel-img" alt="Tokyo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tokyo</h5>
+            <p>Where neon meets tradition.</p>
+          </div>
+        </div>
+
+        <!-- New York -->
+        <div class="carousel-item">
+          <img src="C:\21\images\new_york.jpg"
+               class="d-block w-100 carousel-img" alt="New York">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>New York</h5>
+            <p>The city that never sleeps.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#destCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#destCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="d-grid gap-2">
+      <a href="gallery.html" class="btn btn-outline-primary btn-lg">View Gallery</a>
+      <a href="booking.html" class="btn btn-success btn-lg">Book Your Trip</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
